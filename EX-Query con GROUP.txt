@@ -5,6 +5,6 @@ SELECT YEAR(`enrolment_date`) AS year, COUNT(*) AS total_students FROM `students
 SELECT `office_address`, COUNT(*) AS `total_teachers` FROM `teachers` GROUP BY `office_address`; 
 
 3. Calcolare la media dei voti di ogni appello d'esame
-
+SELECT `exam_id`, AVG(`vote`) AS `average_grade` FROM `exam_student` GROUP BY `exam_id`; 
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
